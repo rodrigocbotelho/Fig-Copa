@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 75px 0;
+    color: #f7dd43;
+    text-transform: uppercase;
+}
+
+.card {
+    display: inline-block;
+    width: 334px;
+    height: 508px;
+    background-image: url(assets/img-1-azul.svg);
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: appear .8s forwards;
+}
+
+.card > img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f7dd43;
+    margin-top: 100px;
+    pointer-events: none;
+    text-align: center;
+}
+
+.info {
+    margin-top: 110px;
+    text-align: left;
+    margin-left: 60px;
+    color: #fff;
+}
+
+.info h1 {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.info p {
+    font-size: 14px;
+    line-height: 160%;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
